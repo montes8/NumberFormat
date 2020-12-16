@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editNumberConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumber" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumberConverter" />
+
+
+    <Button
+        android:id="@+id/btnSoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:ems="6"
+        android:text="Soles"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnDolar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:ems="6"
+        android:text="Dolar"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/btnSoles"
+        app:layout_constraintTop_toTopOf="@+id/btnYen" />
+
+    <Button
+        android:id="@+id/btnDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:ems="6"
+        android:text="Decimal"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMinOne"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnYen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="41dp"
+        android:ems="6"
+        android:text="Yen"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMintwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="7dp"
+        android:ems="6"
+        android:text="Min two"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnYen"
+        app:layout_constraintTop_toBottomOf="@+id/btnYen" />
+
+    <Button
+        android:id="@+id/btnMinOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="23dp"
+        android:ems="6"
+        android:text="Min 1"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/btnDolar"
+        app:layout_constraintTop_toBottomOf="@+id/btnDolar" />
+
+    <Button
+        android:id="@+id/btnPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="16dp"
+        android:ems="6"
+        android:text="porcentaje"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegionalFrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="51dp"
+        android:ems="6"
+        android:text="formater france"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegionalUsa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/btnDecimal" />
+
+    <Button
+        android:id="@+id/btnRegionalUsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:ems="6"
+        android:text="formater EEUU"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/btnDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/btnMintwo" />
+
+    <Button
+        android:id="@+id/btnTypeFormater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="fomato numero"
+        android:ems="6"
+
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRegionalUsa"
+        app:layout_constraintTop_toBottomOf="@+id/btnMintwo" />
+
+    <Button
+        android:id="@+id/btnBigDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Big Decimal"
+        android:ems="6"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSumaThree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegionalFrance" />
+
+    <Button
+        android:id="@+id/btnSumaThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Suma 3"
+        android:ems="6"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBigDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/btnBigDecimal" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="Button"
+        android:ems="6"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSumaThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSumaThree" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
